@@ -8,8 +8,8 @@
 
   <!-- Bootstrap CSS -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <link rel="stylesheet" href="styles_mainpage.css" />
 
@@ -20,6 +20,8 @@
 
   <script src="https://kit.fontawesome.com/64b4ddd240.js" crossorigin="anonymous"></script>
 
+  <script src="mainpage.js"></script>
+
   <title>Person Portfolio</title>
 </head>
 
@@ -27,7 +29,7 @@
   <section id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg">
+      <!-- <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand navbar-light" href=""> <img class="homepage-image" src="images/home_page_logo.png"
             alt="home_page_logo" /> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -38,23 +40,53 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="resume_page/resume.html" class="nav-link">Resume</a>
+              <a href="/resume_page/resume.html" class="nav-link">Resume</a>
             </li>
             <li class="nav-item">
-              <a href="aboutme_page/aboutme.html" class="nav-link">About Me</a>
+              <a href="/aboutme_page/aboutme.html" class="nav-link">About Me</a>
             </li>
           </ul>
         </div>
+      </nav> -->
+
+
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href=""><button class="btn shadow-none"><i class="fa-solid fa-circle fa-3x homepage-button" style="color: #ffde59;"></i></button></a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <div id="button-light-dark">
+                  <li class="nav-item">
+                     <button class="btn light-mode-button shadow-none" onclick="lightMode()"><i class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i></button>
+                     </li>
+          
+              </div>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="/aboutme_page/aboutme.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/aboutme_page/aboutme.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+
+
       <!-- Title -->
       <div class="row">
         <div class="col-lg-6">
-          <h1>Hi My Name is <span class="yellow-text">Dylan</span> and I am a <span class="yellow-text">third year</span>  Mathematics (Computer Science) Major at <span class="yellow-text">UCSD</span>.</h1>
+          <h1>Hi My Name is <span class="yellow-text">Dylan</span> and I am a <span class="yellow-text">third
+              year</span> Mathematics (Computer Science) Major at <span class="yellow-text">UCSD</span>.</h1>
         </div>
 
-         <div class="col-lg-6">
-            <img class="title-image" src="images/Dylan_Fishing.jpeg" alt="Dylan Fishing" />
-          </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/Dylan_Fishing.jpeg" alt="Dylan Fishing" />
+        </div>
 
       </div>
     </div>
@@ -67,34 +99,35 @@
     <h1 class="projects-Title">Featured Projects</h1>
 
     <div class="row">
-        
-        <div class="col-lg-4"> 
-        <a href="studybuddy_page/studybuddy.html"><img class="project-img" src="images/studybuddy_lab_pic.png" alt="study buddy lab pic"></a>
-        </div>
 
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-5">
+      <div class="col-lg-4">
+        <a href="studybuddy_page/studybuddy.html"><img class="project-img" src="images/studybuddy_lab_pic.png"
+            alt="study buddy lab pic"></a>
+      </div>
+
+      <div class="col-lg-2">
+      </div>
+      <div class="col-lg-5">
         <h3 class="project-desc"> A front end website that simulates a studdy buddy service for students</h3>
-        </div>
+      </div>
     </div>
 
     <div class="row">
-        
-        <div class="col-lg-2">
-        </div>
 
-         <div class="col-lg-5">
+      <div class="col-lg-2">
+      </div>
+
+      <div class="col-lg-5">
         <h3 class="project-desc"> A front end and backend website that plays a dice game and tracks your winnings</h3>
-        </div>
+      </div>
 
-         <div class="col-lg-4"> 
+      <div class="col-lg-4">
         <a href="dice_page/dice.html"><img class="project-img" src="images/Dice_Lab.png" alt="Dice_Lab"></a>
-        </div>
-        
+      </div>
+
     </div>
 
-    
+
   </section>
 
 </body>

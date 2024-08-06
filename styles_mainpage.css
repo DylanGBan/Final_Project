@@ -1,7 +1,3 @@
-#title {
-  background-color: #232b2b;
-}
-
 .title-button {
   text-align: center;
 }
@@ -15,30 +11,52 @@ h1 {
   font-weight: bold;
   font-size: 3rem;
   line-height: 1.5;
-  color: white;
-}
-
-.yellow-text {
-  color: #ffde59;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
-  color: white;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   font-size: 1rem;
-  color: white;
 }
 
 p {
   font-family: "Montserrat", serif;
+}
+
+body {
+  background-color: #020202;
   color: white;
+
+  .nav-link {
+    color: white;
+  }
+}
+.yellow-text {
+  color: #ffde59;
+}
+
+.dark-mode {
+  background-color: #020202;
+  color: white;
+
+  .nav-link {
+    color: white;
+  }
+}
+
+.light-mode {
+  background-color: white;
+  color: #020202;
+
+  .nav-link {
+    color: #020202;
+  }
 }
 
 /* NavBar Section */
@@ -47,31 +65,32 @@ p {
   padding: 0 0 4.5rem;
 }
 
-.navbar-brand {
-  font-family: "Montserrat", serif;
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: white;
-}
-
 .nav-item {
   padding: 0 18px;
-  color: white;
 }
-
 .nav-link {
   font-family: "Montserrat", serif;
   font-weight: bold;
   font-size: 1.2rem;
-  color: white;
 }
 
 .nav-link:hover {
   color: #ffde59;
 }
 
-.homepage-image {
-  max-width: 15%;
+.homepage-button {
+  border: none;
+}
+.light-mode-button {
+  background-color: #020202;
+  border: 0;
+  padding: 10px 8px;
+}
+
+.dark-mode-button {
+  background-color: white;
+  border: 0;
+  padding: 10px 8px;
 }
 
 /* Title Image */
@@ -88,7 +107,6 @@ p {
 
 #Projects {
   padding: 7% 15%;
-  background-color: #232b2b;
   position: relative;
 }
 
@@ -97,23 +115,20 @@ p {
   font-size: 2rem;
   font-style: italic;
   padding: 10% 0%;
-  color: white;
 }
 
-.project-img{
+.project-img {
   max-width: 150%;
   border-radius: 15px;
   margin-bottom: 50%;
 }
 
-.project-desc{
+.project-desc {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   align-self: center;
   padding: 20% 0%;
   font-size: 1rem;
-  color: white;
-
 }
 
 /* Media Query Section */
